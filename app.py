@@ -26,6 +26,7 @@ class twitterBot:
         bot = self.bot
         bot.get('https://twitter.com/search?q=%23'+tag+'&src=typeahead_click')
         time.sleep(10)
+        # adjust the bots run time by altering the last digit parameter in the for loop bellow
         for i in range(1, 50):
             bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
             time.sleep(20)
