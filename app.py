@@ -42,17 +42,9 @@ class twitterBot:
             except Exception as ex:
                 time.sleep(2)
 
-
-quincy = twitterBot('plugboyq', 'q1ncy6')
+#input username and password
+quincy = twitterBot('<input username>', '<input password>')
 quincy.login()
-quincy.generate_likes('gain train')
+#input required
+quincy.generate_likes('<input hashtag or person')
 
-# class repeat:
-#     def __init__(self, password):
-#         self.password = password
-#         self.bot = webdriver.Firefox()
-
-#     def command():
-#         bot = self.bot
-#         password = bot.find_element_by_name('session[password]')
-#         password.send_keys()
